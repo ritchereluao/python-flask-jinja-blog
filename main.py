@@ -20,7 +20,7 @@ def home():
 
 @app.route('/post/<int:index>')
 def show_post(index):
-    return render_template("post.html", all_posts=post_objects, post_number=index)
+    return render_template("post.html", all_posts=post_objects, post_index=index)
 
 
 if __name__ == "__main__":
